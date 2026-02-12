@@ -6,7 +6,15 @@ Fazendo o download do arquivo AdventureWorksDW2022.bak e anexando-o no SQL Serve
 
 ## Análise exploratória de dados
 <img align="right" width="400"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_clientes.png">
-Iniciamos o projeto baixando o arquivo AdventureWorksDW2022.bak e restaurando o banco de dados no SQL server. Em um segundo momento, foi analisado minunciosamente cada objeto, tabela, campo, tipos de dados e relacionamentos do modelo de dados AdventureWorks. Após identificar a tabela de clientes e vendas, desenvolvemos os scripts em SQL para explorar os dados e extrair os primeiros insights durante a análise exploratória de dados. Nessa etapa, utilizamos de diversas funções (<code>FORMAT</code>,<code>COUNT</code>, <code>DISTINCT</code>, <code>AS</code>, <code>INNER JOIN</code>, <code>GROUP BY</code>, <code>ORDER BY</code>, <code>SUM</code>, <code>MIN</code>, <code>MAX</code> e <code>AVG</code>) que auxiliaram a responder as principais demandas dos gestores da empresa, que era entender o panomara geral dos clientes, como por exemplo: <br><br>
+Iniciei o projeto realizando o download do arquivo AdventureWorksDW2022.bak e restaurando o banco de dados no SQL Server. Em seguida, conduzi uma análise minunciosa da estrutura do banco, explorando tabelas, campos, tipos de dados e relacionamentos para entender como o modelo estava organizado e identificar as principais tabelas relacionadas a clientes e vendas.
+
+Com esse entendimento, desenvolvi os primeiros scripts em SQL durante a etapa de Análise Exploratória de Dados (EDA), com o objetivo de gerar uma visão inicial do comportamento da base de clientes e do desempenho comercial.
+
+Primeiramente, calculei o total de clientes distintos com vendas utilizando COUNT combinado com DISTINCT, aplicando FORMAT para padronizar a visualização do resultado. Em seguida, analisei a distribuição de clientes por país/região, realizando INNER JOIN entre as tabelas de vendas, clientes e geografia, consolidando as informações com GROUP BY e organizando os resultados com ORDER BY, o que permitiu identificar os mercados com maior concentração de clientes ativos.
+
+Também explorei o comportamento de compra por produto, identificando os cinco modelos mais adquiridos por meio de TOP 5, COUNT e GROUP BY, o que trouxe uma visão clara sobre os produtos com maior volume de vendas.
+
+Para aprofundar a análise financeira, calculei a média de vendas por cliente a partir de uma subconsulta, onde utilizei SUM para consolidar o total vendido por cliente e, posteriormente, AVG para obter a média geral. Por fim, analisei o ticket de vendas utilizando MIN, AVG e MAX, identificando respectivamente o menor valor de venda, o ticket médio e o maior valor registrado.que auxiliaram a responder as principais demandas dos gestores da empresa, que era entender o panomara geral dos clientes, como por exemplo: <br><br>
 - Clientes distintos <br>
 - Clientes por país/região <br>
 - Produtos mais comprados por estes clientes <br>
@@ -19,10 +27,22 @@ Iniciamos o projeto baixando o arquivo AdventureWorksDW2022.bak e restaurando o 
 
 ## Análise de Novos Clientes
 <img align="left" width="500"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_Novos_clientes.png">
-Em um segundo passo, decidimos identificar os novos clientes. Para isso, decidimos agrupar os clientes por ano e mês em uma CTE - Common Table Expression, porém é possível o mesmo resultado utilizando outras técnicas. Na CTE criada com o nome ClientesPrimeiraDataCompra, identificamos qual foi a primeira compra de cada cliente e agrupando novos clientes por ano e mês. Já com os dados agrupados, utilizamos a função de janela <code>LAG</code> para encontrar novos clientes no mesmo mês do ano anterior, também  permitindo os seguintes cálculos: <br><br>
+Na segunda etapa do projeto, o foco foi analisar a aquisição de clientes ao longo do tempo. Mais do que apenas contabilizar vendas, a proposta foi entender em que momento cada cliente passou a integrar a base e como essa entrada evoluiu mês a mês.
+
+Para organizar essa lógica, optei por trabalhar com uma CTE (Common Table Expression), o que permitiu dividir a análise em etapas mais claras. O primeiro passo foi identificar a data da primeira compra de cada cliente por meio da função <code>MIN</code>, assegurando que cada cliente fosse considerado exatamente no período em que passou a gerar receita. A partir dessa informação, extraí o ano e o mês com <code>DATEPART (YEAR e MONTH)</code>, estruturando a base de acordo com o período de aquisição. Para manter a padronização e garantir a ordenação correta, apliquei <code>FORMAT('00')</code> ao mês.
+
+A consolidação das informações por cliente foi feita com <code>GROUP BY</code>, enquanto a cláusula <code>HAVING</code> delimitou a análise aos clientes cuja primeira compra ocorreu entre 2011 e 2013, mantendo o recorte temporal do estudo.
+
+Com a base já estruturada por período de entrada, passei a mensurar o volume de novos clientes por meio do <code>COUNT</code>, obtendo o total mensal de aquisições. Na sequência, incorporei uma camada comparativa com a função de janela <code>LAG</code>, associada ao <code>OVER (ORDER BY Ano, Mes)</code>, permitindo recuperar automaticamente o número de novos clientes no mesmo mês do ano anterior. Dessa forma, a análise de crescimento Year over Year (YoY) foi construída diretamente no SQL, sem depender de transformações adicionais na ferramenta de visualização.
+
+Por fim, a estrutura condicional <code>CASE</code> viabilizou o cálculo tanto da variação absoluta quanto do crescimento percentual em relação ao período anterior, enquanto o <code>ORDER BY</code> garantiu a organização cronológica do resultado final. Permitindo os seguintes cálculos:
+
 - Novos Clientes  <br>
 - Novos Clientes Ano Anterior<br>
 - Variação de novos clientes entre períodos <br>
+<br>
+
+
 <br>
 <a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
 <br><br>
