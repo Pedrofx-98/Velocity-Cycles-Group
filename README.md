@@ -70,13 +70,43 @@ Assim como eu mencionei no projeto MaxOil Solutions, não existe uma ferramenta 
 ## Dashboard Power BI
 <img align="right" width="500"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/Dashboard.png">
 Seguindo a idéia de melhorar a ferramenta para uma análise dinâmica e visual de informações, desenvolvi um dashboard focado na análise dos clientes novos e recorrentes da mesma base de dados AdventureWorks2022 utilizada em todo o projeto.
-Como o Power BI permite análises dinâmicas e visuais de forma simples, escrevendo menos código DAX e permitindo o usuário total interação com a ferramenta, fiz uma análise exploratória na quantidade e receira entre novos e recorrente.<br>
+Como o Power BI permite análises dinâmicas e visuais de forma simples, escrevendo menos código DAX e permitindo o usuário total interação com a ferramenta, fiz uma análise exploratória na quantidade e receita entre Clientes novos e recorrentes.<br>
 Com esta análise, cheguei as seguintes conclusões:<br>
  - A maioria dos clientes a partir de 2013 é novo. <br>
  - Além da quantidade de clientes novos, a receita trazida por clientes novos também é a maior fatia do total.<br>
  - Os clientes novos não são a maioria para todos países e períodos. Por isso o Power BI é uma ferramenta de extrema importância, pois permite o usuário final fazer seus filtros e ter análises de forma dinâmica.
 <br><br>
-<a href="https://app.powerbi.com/view?r=eyJrIjoiYmNkMTgxMzctMDk2MC00MjRjLWE1ZDctZDliMDUyZGEyYTU0IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa Velocity Cycles Group.
+
+<p>
+Acesse o dashboard interativo desenvolvido para a empresa <strong>Velocity Cycles Group</strong>:
 <br>
-<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/PowerBI/Velocity%20Cycles%20Group.pbix">Clique aqui</a> e acesse o arquivo .pbix no Github.
-<br><br>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiYmNkMTgxMzctMDk2MC00MjRjLWE1ZDctZDliMDUyZGEyYTU0IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">
+Visualizar Dashboard no Power BI Service
+</a>
+</p>
+
+<p>
+O arquivo completo do projeto (.pbix) está disponível no GitHub:
+<br>
+<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/PowerBI/Velocity%20Cycles%20Group.pbix">
+Acessar Projeto no GitHub
+</a>
+</p>
+
+<p>
+Informações técnicas adicionais:
+<br>
+<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/Medidas.png" target="_blank">
+Tabela de Medidas Desenvolvidas em DAX
+</a>
+<br>
+<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/diagrama.png" target="_blank">
+Diagrama do Modelo de Dados e Relacionamentos
+</a>
+</p>
+
+## Ferramentas e linguagens utilizadas
+<div style="display: inline_block">
+    <img align="center" alt="SQL" height="40" width="40" src="https://github.com/BruceFonseca/ferramentas/blob/main/logo.png?raw=true">
+    <img align="center" alt="Power BI" height="40" width="40" src="https://github.com/BruceFonseca/ferramentas/blob/main/1200px-New_Power_BI_Logo.svg.png?raw=true">
+</div>
