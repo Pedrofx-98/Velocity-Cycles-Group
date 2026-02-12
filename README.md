@@ -64,3 +64,19 @@ Com o SQL, podemos analisar, extrair, manipular e exibir os dados de uma base de
 A minha conclusão é que o SQL é sempre uma linguagem muito importante e deve ser utilizada para analisar um banco de dados antes de escolher outra ferramenta para análise dos dados, como o Power BI por exemplo. Ou seja, validar as informações no SQL e depois consider outras ferramentas de acordo com a necessidade da empresa ou projeto que estiver atuando é uma excelente decisão para quem trabalha com dados.
 
 Assim como eu mencionei no projeto MaxOil Solutions, não existe uma ferramenta melhor que a outra, existe ferramentas adequadas as necessidades apresentadas em cada projeto de dados.
+
+<a href="https://github.com/Pedrofx-98/MaxOilSolutions" target="_blank">Clique aqui</a> caso queira acessar mais informações do projeto MaxOil Solutions no Github.
+
+## Dashboard Power BI
+<img align="right" width="500"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/Dashboard.png">
+Seguindo a idéia de melhorar a ferramenta para uma análise dinâmica e visual de informações, desenvolvi um dashboard focado na análise dos clientes novos e recorrentes da mesma base de dados AdventureWorks2022 utilizada em todo o projeto.
+Como o Power BI permite análises dinâmicas e visuais de forma simples, escrevendo menos código DAX e permitindo o usuário total interação com a ferramenta, fiz uma análise exploratória na quantidade e receira entre novos e recorrente.<br>
+Com esta análise, cheguei as seguintes conclusões:<br>
+ - A maioria dos clientes a partir de 2013 é novo. <br>
+ - Além da quantidade de clientes novos, a receita trazida por clientes novos também é a maior fatia do total.<br>
+ - Os clientes novos não são a maioria para todos países e períodos. Por isso o Power BI é uma ferramenta de extrema importância, pois permite o usuário final fazer seus filtros e ter análises de forma dinâmica.
+<br><br>
+<a href="https://app.powerbi.com/view?r=eyJrIjoiYmNkMTgxMzctMDk2MC00MjRjLWE1ZDctZDliMDUyZGEyYTU0IiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9" target="_blank">Clique aqui</a> e acesse o a solução desenvolvida para a empresa Velocity Cycles Group.
+<br>
+<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/PowerBI/Velocity%20Cycles%20Group.pbix">Clique aqui</a> e acesse o arquivo .pbix no Github.
+<br><br>
