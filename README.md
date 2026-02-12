@@ -2,7 +2,7 @@
 Utilizando o banco de dados AdventureWorks2022, referente a uma empresa imaginária de fabricação e venda de bicicletas, iniciamos uma análise para entender a evolução dos clientes ao longo do tempo, principalmente entre 2011 e 2013. O objetivo inicial é fazer uma análise exploratória dos clientes que compraram os produtos da  Velocity Cycles Group, entendendo onde estão, quanto e o que compram, se houve evolução na base de novos clientes e onde está o maior impacto desta evolução.
 
 Fazendo o download do arquivo AdventureWorksDW2022.bak e anexando-o no SQL Server, é possível executar cada consulta SQL utilizada nesta análise e obter os mesmos resultados apresentados.
-<br><br><br>
+<br><br>
 
 ## Análise exploratória de dados
 <img align="right" width="400"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_clientes.png">
@@ -32,16 +32,13 @@ Para organizar essa lógica, optei por trabalhar com uma CTE (Common Table Expre
 
 A consolidação das informações por cliente foi feita com <code>GROUP BY</code>, enquanto a cláusula <code>HAVING</code> delimitou a análise aos clientes cuja primeira compra ocorreu entre 2011 e 2013, mantendo o recorte temporal do estudo.
 
-Com a base já estruturada por período de entrada, passei a mensurar o volume de novos clientes por meio do <code>COUNT</code>, obtendo o total mensal de aquisições. Na sequência, incorporei uma camada comparativa com a função de janela <code>LAG</code>, associada ao <code>OVER (ORDER BY Ano, Mes)</code>, permitindo recuperar automaticamente o número de novos clientes no mesmo mês do ano anterior. Dessa forma, a análise de crescimento Year over Year (YoY) foi construída diretamente no SQL, sem depender de transformações adicionais na ferramenta de visualização.
+Com a base já estruturada por período de entrada, passei a mensurar o volume de novos clientes por meio do <code>COUNT</code>, obtendo o total mensal de aquisições. Na sequência, incorporei uma camada comparativa com a função de janela <code>LAG</code>, associada ao <code>OVER (ORDER BY Ano, Mes)</code>, permitindo recuperar automaticamente o número de novos clientes no mesmo mês do ano anterior.
 
 Por fim, a estrutura condicional <code>CASE</code> viabilizou o cálculo tanto da variação absoluta quanto do crescimento percentual em relação ao período anterior, enquanto o <code>ORDER BY</code> garantiu a organização cronológica do resultado final. Permitindo os seguintes cálculos:
 
 - Novos Clientes  <br>
 - Novos Clientes Ano Anterior<br>
 - Variação de novos clientes entre períodos <br>
-<br>
-
-
 <br>
 <a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
 <br><br>
