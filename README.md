@@ -14,3 +14,16 @@ Iniciamos o projeto baixando o arquivo AdventureWorksDW2022.bak e restaurando o 
 - E informações pertinentes, como ticket médio, mínimo e máximo.
 <br><br>
 <a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
+
+<br><br>
+
+## Análise de Novos Clientes
+<img align="left" width="500"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql">
+Em um segundo passo, decidimos identificar os novos clientes. Para isso, decidimos agrupar os clientes por ano e mês em uma CTE - Common Table Expression, porém é possível o mesmo resultado utilizando outras técnicas. Na CTE criada com o nome ClientesPrimeiraDataCompra, identificamos qual foi a primeira compra de cada cliente e agrupando novos clientes por ano e mês. Já com os dados agrupados, utilizamos a função de janela <code>LAG</code> para encontrar novos clientes no mesmo mês do ano anterior, também  permitindo os seguintes cálculos: <br><br>
+- Novos Clientes  <br>
+- Novos Clientes Ano Anterior<br>
+- Variação de novos clientes entre períodos <br>
+<br>
+<a href="https://github.com/BruceFonseca/AdventureWorks2022/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
+<br><br>
+Analisando a variação de novos clientes entre períodos, é possível identificar em 2013, um crescimento mensal muito acima da variação de 2012, sendo necessário aprofundar a análise e identificar de onde está vindo este grande crescimento de novos clientes.
