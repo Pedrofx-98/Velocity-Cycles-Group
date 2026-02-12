@@ -6,8 +6,7 @@ Fazendo o download do arquivo AdventureWorksDW2022.bak e anexando-o no SQL Serve
 
 ## Análise exploratória de dados
 <img align="right" width="500"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_clientes.png">
-Iniciamos o projeto baixando o arquivo AdventureWorksDW2022.bak e restaurando o banco de dados no SQL server. Em um segundo momento, foi analisado minunciosamente cada objeto, tabela, campo, tipos de dados e relacionamentos do modelo de dados AdventureWorks. Após identificar a tabela de clientes e vendas, desenvolvemos os scripts em SQL para explorar os dados e extrair os primeiros insights durante a análise exploratória de dados. 
-As principais demandas dos gestores da empresa era entender o panomara geral dos clientes, como por exemplo: <br><br>
+Iniciamos o projeto baixando o arquivo AdventureWorksDW2022.bak e restaurando o banco de dados no SQL server. Em um segundo momento, foi analisado minunciosamente cada objeto, tabela, campo, tipos de dados e relacionamentos do modelo de dados AdventureWorks. Após identificar a tabela de clientes e vendas, desenvolvemos os scripts em SQL para explorar os dados e extrair os primeiros insights durante a análise exploratória de dados. Nessa etapa, utilizamos de diversas funções (<code>FORMAT</code>,<code>COUNT</code>, <code>DISTINCT</code>, <code>AS</code>, <code>INNER JOIN</code>, <code>GROUP BY</code>, <code>ORDER BY</code>, <code>SUM</code>, <code>MIN</code>, <code>MAX</code> e <code>AVG</code>) que auxiliaram a responder as principais demandas dos gestores da empresa, que era entender o panomara geral dos clientes, como por exemplo: <br><br>
 - Clientes distintos <br>
 - Clientes por país/região <br>
 - Produtos mais comprados por estes clientes <br>
