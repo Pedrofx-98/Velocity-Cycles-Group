@@ -48,7 +48,7 @@ Analisando a variação de novos clientes entre períodos, foi possível identif
 ## Variação de novos clientes entre períodos
 <img align="right" width="500" height="500" src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_Novos%20Clientes%20Delta%202013.png">
 Na terceira etapa de análise, visualizando a variação de novos clientes, quando comparados com o mesmo período/mês do ano anterior, decidi agrupar esta variação por região/país para identificar se houve crescimento. 
-Filtrei apenas o ano de 2013, pois foi o período com maiores taxas de crescimentos de novos clientes, o que nos permitiu concluir que: <br><br>
+Filtrei apenas o ano de 2013, pois foi o período com maiores taxas de crescimentos de novos clientes, o que permitiu concluir que: <br><br>
 - Canadá teve o maior crescimento percentual entre todos os países - aproximadamente 623% <br>
 - Estados Unidos teve o maior crescimento cumulativo de clientes - aproximadamente 5050 <br>
 - Apenas os Estados Unidos tiveram um crescimento maior que todos países da Europa juntos, sendo a América do Norte o principal mercado de atuação da empresa.
