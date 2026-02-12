@@ -22,7 +22,7 @@ Para aprofundar a análise, calculei a média de vendas por cliente a partir de 
 <br><br>
 <a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Clientes.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
 
-<br><br>
+<br>
 
 ## Análise de Novos Clientes
 <img align="left" width="500"  src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_Novos_clientes.png">
