@@ -40,5 +40,5 @@ Por fim, a estrutura condicional <code>CASE</code> viabilizou o cálculo tanto d
 - Novos Clientes Ano Anterior<br>
 - Variação de novos clientes entre períodos <br>
 <br>
-<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes%20Delta%202013.sql">Clique aqui</a> e acesse o script SQL no Github.
+<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql">Clique aqui</a> e acesse o script SQL no Github.
 <br><br>
