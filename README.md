@@ -51,7 +51,7 @@ Na terceira etapa de análise, visualizando a variação de novos clientes, quan
 Filtrei apenas o ano de 2013, pois foi o período com maiores taxas de crescimentos de novos clientes, o que permitiu concluir que: <br><br>
 - Canadá teve o maior crescimento percentual entre todos os países - aproximadamente 623%. <br>
 - Estados Unidos teve o maior crescimento cumulativo de clientes - aproximadamente 5050. <br>
-- Apenas os Estados Unidos tiveram um crescimento maior que todos países da Europa juntos, sendo a América do Norte o principal mercado de atuação da empresa.
+- Apenas os Estados Unidos tiveram um crescimento maior que todos países da Europa juntos, sendo a América do Norte o principal mercado de atuação da empresa.<br>
 - Todos países europeus dobraram ou superaram sua base de novos clientes. <br>
 - Austrália, apesar de não ter um crescimento comparável com Europa e América do Norte, aumentou sua base de novos clientes em quase 50%, sendo um ótimo resultado em 2013. <br>
 
