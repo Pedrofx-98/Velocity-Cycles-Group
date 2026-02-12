@@ -39,6 +39,21 @@ Por fim, a estrutura condicional <code>CASE</code> viabilizou o cálculo tanto d
 - Novos Clientes  <br>
 - Novos Clientes Ano Anterior<br>
 - Variação de novos clientes entre períodos <br>
+
+Analisando a variação de novos clientes entre períodos, foi possível identificar em 2013, um crescimento mensal muito acima da variação de 2012, sendo necessário aprofundar a análise e identificar de onde está vindo este grande crescimento de novos clientes.
 <br>
 <a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes.sql">Clique aqui</a> e acesse o script SQL no Github.
 <br><br>
+
+## Variação de novos clientes entre períodos
+<img align="right" width="500" height="500" src="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/Figures/sql_Novos%20Clientes%20Delta%202013.png">
+Na terceira etapa de análise, visualizando a variação de novos clientes, quando comparados com o mesmo período/mês do ano anterior, decidi agrupar esta variação por região/país para identificar se houve crescimento. 
+Filtrei apenas o ano de 2013, pois foi o período com maiores taxas de crescimentos de novos clientes, o que nos permitiu concluir que: <br><br>
+- Canadá teve o maior crescimento percentual entre todos os países - aproximadamente 623% <br>
+- Estados Unidos teve o maior crescimento cumulativo de clientes - aproximadamente 5050 <br>
+- Apenas os Estados Unidos tiveram um crescimento maior que todos países da Europa juntos, sendo a América do Norte o principal mercado de atuação da empresa.
+- Todos países europeus dobraram ou superaram sua base de novos clientes. <br>
+- Austrália, apesar de não ter um crescimento comparável com Europa e América do Norte, aumentou sua base de novos clientes em quase 50%, sendo um ótimo resultado em 2013. <br>
+
+<br>
+<a href="https://github.com/Pedrofx-98/Velocity-Cycles-Group/blob/main/SQL/AdventureWorks%20-%20Novos%20Clientes%20Delta%202013.sql" target="_blank">Clique aqui</a> e acesse o script SQL no Github.
